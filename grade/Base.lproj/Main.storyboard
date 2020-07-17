@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,84 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="grade" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter desire grade " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="utC-SA-jUZ">
+                                <rect key="frame" x="39" y="363" width="310" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="9og-f7-OWW"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="Baf-rk-9Sn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="EUv-G1-zn4"/>
+                                    <constraint firstAttribute="height" constant="34" id="MwT-dT-76X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter percentage " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wAF-Pn-SmP">
+                                <rect key="frame" x="39" y="554" width="310" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="072-BS-JYb"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="138" id="7fB-un-9hA"/>
+                                    <constraint firstAttribute="width" constant="138" id="cAv-k6-Dpd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="hEv-Gb-in9"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="34" id="kbP-zs-VeU"/>
+                                    <constraint firstAttribute="height" constant="34" id="pbB-5y-iTM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter grade " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8uR-FD-7gp">
+                                <rect key="frame" x="50" y="213" width="310" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="6Tu-qv-7B7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="PDj-VL-ZdX"/>
+                                    <constraint firstAttribute="height" constant="34" id="Uot-Cf-Ad4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="ay2-re-wWI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epD-4f-y0o">
+                                <rect key="frame" x="127" y="84" width="135" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="efs-xi-HPL"/>
+                                    <constraint firstAttribute="height" constant="55" id="sTh-k7-Ja7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRY-0t-GHI">
+                                <rect key="frame" x="157" y="652" width="74" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="S1c-bL-q75"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="VyL-KH-H0b"/>
+                                    <constraint firstAttribute="height" constant="30" id="hJR-Pj-2QX"/>
+                                    <constraint firstAttribute="width" constant="46" id="oj6-o2-nqC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="calculate "/>
+                                <connections>
+                                    <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Asw-mu-Xar"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="DesireGradeTexTField" destination="utC-SA-jUZ" id="KDb-rh-sps"/>
+                        <outlet property="currentGradeTextFeild" destination="8uR-FD-7gp" id="d06-IQ-Jg0"/>
+                        <outlet property="enterPercentageTextField" destination="wAF-Pn-SmP" id="cx9-aS-Qws"/>
+                        <outlet property="finalGrade" destination="epD-4f-y0o" id="TW6-b8-NZP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
     </scenes>
 </document>
