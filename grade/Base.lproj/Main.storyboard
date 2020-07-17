@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -15,58 +15,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter desire grade " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="utC-SA-jUZ">
-                                <rect key="frame" x="39" y="363" width="310" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter desire grade " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="utC-SA-jUZ">
+                                <rect key="frame" x="39" y="359" width="310" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="138" id="9og-f7-OWW"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="Baf-rk-9Sn"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="EUv-G1-zn4"/>
-                                    <constraint firstAttribute="height" constant="34" id="MwT-dT-76X"/>
+                                    <constraint firstAttribute="height" constant="34" id="Bru-Ke-s0e"/>
+                                    <constraint firstAttribute="width" constant="310" id="IyI-bL-jxw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter percentage " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wAF-Pn-SmP">
-                                <rect key="frame" x="39" y="554" width="310" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter percentage " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wAF-Pn-SmP">
+                                <rect key="frame" x="39" y="520" width="310" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="072-BS-JYb"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="138" id="7fB-un-9hA"/>
-                                    <constraint firstAttribute="width" constant="138" id="cAv-k6-Dpd"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="hEv-Gb-in9"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="34" id="kbP-zs-VeU"/>
-                                    <constraint firstAttribute="height" constant="34" id="pbB-5y-iTM"/>
+                                    <constraint firstAttribute="height" constant="34" id="927-nv-029"/>
+                                    <constraint firstAttribute="width" constant="310" id="dIO-g7-iyF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter grade " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8uR-FD-7gp">
-                                <rect key="frame" x="50" y="213" width="310" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="grade neeed on final" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epD-4f-y0o">
+                                <rect key="frame" x="50" y="98" width="287" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="138" id="6Tu-qv-7B7"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="PDj-VL-ZdX"/>
-                                    <constraint firstAttribute="height" constant="34" id="Uot-Cf-Ad4"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="ay2-re-wWI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epD-4f-y0o">
-                                <rect key="frame" x="127" y="84" width="135" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="135" id="efs-xi-HPL"/>
-                                    <constraint firstAttribute="height" constant="55" id="sTh-k7-Ja7"/>
+                                    <constraint firstAttribute="height" constant="60" id="KYO-po-PQk"/>
+                                    <constraint firstAttribute="width" constant="287" id="zK0-Ok-Kld"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRY-0t-GHI">
-                                <rect key="frame" x="157" y="652" width="74" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRY-0t-GHI">
+                                <rect key="frame" x="116" y="611" width="147" height="46"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="S1c-bL-q75"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="VyL-KH-H0b"/>
-                                    <constraint firstAttribute="height" constant="30" id="hJR-Pj-2QX"/>
-                                    <constraint firstAttribute="width" constant="46" id="oj6-o2-nqC"/>
+                                    <constraint firstAttribute="height" constant="46" id="QMq-Qq-KnM"/>
+                                    <constraint firstAttribute="width" constant="147" id="cxm-N1-23b"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="calculate "/>
@@ -74,8 +55,34 @@
                                     <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Asw-mu-Xar"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter grade " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8uR-FD-7gp">
+                                <rect key="frame" x="39" y="209" width="310" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="2WP-8D-OVl"/>
+                                    <constraint firstAttribute="width" constant="310" id="8mE-kR-Xsj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HRY-0t-GHI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="0iJ-uy-koh"/>
+                            <constraint firstItem="8uR-FD-7gp" firstAttribute="top" secondItem="epD-4f-y0o" secondAttribute="bottom" constant="51" id="0qP-mp-WRe"/>
+                            <constraint firstItem="utC-SA-jUZ" firstAttribute="top" secondItem="8uR-FD-7gp" secondAttribute="bottom" constant="116" id="5Ez-k3-LGz"/>
+                            <constraint firstItem="wAF-Pn-SmP" firstAttribute="top" secondItem="utC-SA-jUZ" secondAttribute="bottom" constant="127" id="CEq-Rg-SMZ"/>
+                            <constraint firstItem="utC-SA-jUZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="OHJ-96-nGf"/>
+                            <constraint firstItem="8uR-FD-7gp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="ShB-Bo-Krf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wAF-Pn-SmP" secondAttribute="trailing" constant="65" id="SwB-7r-IU8"/>
+                            <constraint firstItem="HRY-0t-GHI" firstAttribute="top" secondItem="wAF-Pn-SmP" secondAttribute="bottom" constant="57" id="Xec-S1-SBv"/>
+                            <constraint firstItem="epD-4f-y0o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="YAa-vL-Q0s"/>
+                            <constraint firstItem="wAF-Pn-SmP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="ZKK-bM-TAx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="utC-SA-jUZ" secondAttribute="trailing" constant="65" id="jtg-gx-aT0"/>
+                            <constraint firstItem="epD-4f-y0o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="lVo-Y5-Ebc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HRY-0t-GHI" secondAttribute="trailing" constant="151" id="o33-3V-uRm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8uR-FD-7gp" secondAttribute="trailing" constant="65" id="qR3-kc-uvF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="epD-4f-y0o" secondAttribute="trailing" constant="77" id="zkr-qn-V1f"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>

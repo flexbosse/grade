@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
     @IBOutlet weak var finalGrade: UILabel!
     
     @IBOutlet weak var currentGradeTextFeild: UITextField!
@@ -29,19 +34,15 @@ class ViewController: UIViewController {
         
         let onehundred = 100.0
         
-        let percentOfGrade = Double(onehundred - finalGradePercentage!)/oneHundred
+        let percentOfGrade = Double(onehundred - enterPercentage!)/100.0
         
-        let gradeNeededOnFinal = (desireGrade! - (percentOfGrade * currentGrade !))/finalWorthPercentage!)/100.0
+        let gradeNeededOnFinal = (desireGrade! - (percentOfGrade * currentGrade!))/enterPercentage!
         
-        gradeNeededOnFinal.text = "You need a "\(gradeNeededOnFinal * 100)%
+        finalGrade.text = "You need a \(gradeNeededOnFinal * 100)%"
         
     }
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
 
 }
